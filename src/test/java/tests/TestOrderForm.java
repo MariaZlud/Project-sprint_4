@@ -1,7 +1,8 @@
-package Tests;
+package tests;
 
-import PageObject.OrderForm;
-import PageObject.OrderFormTwo;
+import org.junit.Assert;
+import pages.OrderForm;
+import pages.OrderFormTwo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -50,7 +51,7 @@ public class TestOrderForm extends TestData {
         mainPage.clickButtonOrderInHeader();
         orderForm.fillInAllFieldsForWhom(name, surname, address, station, phone);
         orderFormTwo.fillInAllTheFieldsAboutRent(date, rentalPeriod, colorScooter, comment);
-        orderFormTwo.checkSuccessfulOrder();
+        Assert.assertTrue("Сообщение об успешном заказе не отобразилось", orderFormTwo.checkSuccessfulOrder());
 
     }
 
@@ -62,6 +63,6 @@ public class TestOrderForm extends TestData {
         mainPage.clickButtonOrderAtBottom();
         orderForm.fillInAllFieldsForWhom(name, surname, address, station, phone);
         orderFormTwo.fillInAllTheFieldsAboutRent(date, rentalPeriod, colorScooter, comment);
-        orderFormTwo.checkSuccessfulOrder();
+        Assert.assertTrue("Сообщение об успешном заказе не отобразилось", orderFormTwo.checkSuccessfulOrder());
     }
 }

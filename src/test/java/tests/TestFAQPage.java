@@ -1,6 +1,6 @@
-package Tests;
+package tests;
 
-import PageObject.FAQPage;
+import pages.FAQPage;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -17,7 +17,7 @@ public class TestFAQPage extends TestData {
         this.locatorAnswer = locatorAnswer;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: вопрос {0}: проверка ответа")
     public static Object[][] getFAQPage() {
         return new Object[][] {
                 {0, "Сутки — 400 рублей. Оплата курьеру — наличными или картой."},

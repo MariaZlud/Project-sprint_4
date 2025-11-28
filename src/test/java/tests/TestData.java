@@ -1,6 +1,6 @@
-package Tests;
+package tests;
 
-import PageObject.MainPage;
+import pages.MainPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;

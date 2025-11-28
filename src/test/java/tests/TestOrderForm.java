@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 @RunWith(Parameterized.class)
-public class TestOrderForm extends TestData {
+public class TestOrderForm extends BaseTest {
     String name;
     String surname;
     String address;

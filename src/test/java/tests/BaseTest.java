@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 /*import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;*/
 
-public class TestData {
+public class BaseTest {
     protected WebDriver driver;
     protected MainPage mainPage;
 

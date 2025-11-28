@@ -8,7 +8,7 @@ import org.junit.runners.Parameterized;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class TestFAQPage extends TestData {
+public class TestFAQPage extends BaseTest {
     int questionId;
     String locatorAnswer;
 
